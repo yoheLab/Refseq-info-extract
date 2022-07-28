@@ -33,7 +33,7 @@ do
 done
 
 #after loop is done, a python script is called that edits the files into csv format
-#The final command adds a header to the csv file of all content in the csv file
+#The final command adds a header to the csv file of all content in the csv file 
 
 python3 Refseq_edit_file.py >> file_name.csv
 
