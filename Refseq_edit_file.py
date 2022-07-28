@@ -2,7 +2,7 @@ import os
 
 def search():
     
-    path = '/projects/yohe_lab/databases/Neotropical_Bat_Nasal_Microbiome_Data/BZ_Fungal_Bats/script_practice'
+    path = 'full/path/to/directory'
     ext = ('profile.txt')
     
     for files in os.listdir(path):
