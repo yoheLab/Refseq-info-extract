@@ -17,30 +17,8 @@ def search():
                 final_string = final_string[:reference] 
                 print(final_string)
 
-                #print(files)
         else:
             continue
-
-
-
-
-    
-    #fh = open("combined_Arja_file.txt")
-    #new_file =open("FASTA.txt","w")
-    
-    
-    
-    #for line in fh:
-    #    line = line.replace(";",",").replace("ORGANISM",",")
-    #    index = line.find('Eukaryota')
-    #    reference = line.find('.R')
-    #    final_string = line[:index] + "," + line[index:]
-    #    final_string = final_string[:reference] + "\n"
-        
-    #    print(final_string)
-        
-       # new_file.write(final_string)
-
     
 
 
