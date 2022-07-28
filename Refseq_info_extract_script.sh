@@ -4,7 +4,7 @@
 
 module load anaconda3
 
-conda activate WNS_project
+conda activate conda_environment
 
 
 for content in *.txt;
@@ -29,8 +29,8 @@ done
 
 
 
-python3 bat_edit_file.py >> fungi_bat.csv
+python3 Refseq_edit_file.py >> file_name.csv
 
-#sed -i '1i Hits,Sequence_ID,Microbe_organism,Bat_species,Domain,Kingdom,Subkingdom,Phylum,Subpyhlum,Class,Subclass,Order,Family,Genus,Species' fungi_bat.csv
+sed -i '1i Hits,Sequence_ID,Microbe_organism,Bat_species,Domain,Kingdom,Subkingdom,Phylum,Subpyhlum,Class,Subclass,Order,Family,Genus,Species' file_name.csv
 
 
