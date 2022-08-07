@@ -14,6 +14,6 @@ Once prepared and edits are made the script is ready to go. (The shell script is
 
 
 
-
+An example of the CSV output file
 
 ![image](https://user-images.githubusercontent.com/97570002/183275995-b1dc62c4-97ef-4589-8c21-1229d973a51f.png)
