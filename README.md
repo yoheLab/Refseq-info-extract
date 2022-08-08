@@ -3,6 +3,9 @@ The purpose of these scripts is to quantify and identify read alignment hits, se
 
 
 Steps:
+First thing is that you will need to create a conda environment and install Entrez in these instructions https://bioconda.github.io/recipes/entrez-direct/README.html
+(Just do the install and update commands)
+
 Download both scripts (python and shell) to your directory. The two scripts work together for CSV conversion.
 
 In order for the scripts to function correctly, the BAM files in your directory must be named in the form of binomial nomenclature of the particular organism. The format of the file name must look like this ex. (NEW_Myotis__lucifugus.bam) The keywords of "NEW_" and "__" are meant to be recognized and replaced when converting into a CSV file.
