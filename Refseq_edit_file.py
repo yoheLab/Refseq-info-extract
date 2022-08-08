@@ -9,7 +9,7 @@ def search():
         if files.endswith(ext):
             fh = open(files)
             for line in fh:
-                line = line.replace(";",",").replace("ORGANISM",",").replace("_qual.txt-quality.txt","").replace("__"," ").replace("NEW_",",")
+                line = line.replace(";",",").replace("ORGANISM",",").replace(".bam-quality.txt","").replace("__"," ").replace("NEW_",",")
                 index = line.find('Eukaryota')
                 reference = line.find('.R')
                 final_string = line[:index] + "," + line[index:]
