@@ -4,14 +4,16 @@
 
 module load anaconda3
 
+module load samtools
+
 conda activate conda_environment
 
 #Goes through parsed bam files and seperates first and second column with a comma
 
-for content in *.txt;
+for content in *.bam;
 do
-	#samtools view -q 30 $content | awk '{print $3}' | uniq -c | sort -n >> $content-quality.txt | awk '{print $1", "$2}' $content-quality.txt >> $content-quality.txt
-	awk '{print $1", "$2}' $content >> $content-quality.txt
+	samtools view -q 30 $content | awk '{print $3}' | uniq -c | awk '{print $1", "$2}' |sort -n >> $content-quality.txt
+	#awk '{print $1", "$2}' $content >> $content-quality.txt
 done
 
 #loop Goes through the sequence IDs in the second column of every Refseq quality file and loops through them into a command
