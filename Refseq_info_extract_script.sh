@@ -8,12 +8,11 @@ module load samtools
 
 conda activate conda_environment
 
-#Goes through parsed bam files and seperates first and second column with a comma
+#Goes through the bam files and prints a count of the refseq alignments and accession ID to a "quality file"
 
 for content in *.bam;
 do
 	samtools view -q 30 $content | awk '{print $3}' | uniq -c | awk '{print $1", "$2}' |sort -n >> $content-quality.txt
-	#awk '{print $1", "$2}' $content >> $content-quality.txt
 done
 
 #loop Goes through the sequence IDs in the second column of every Refseq quality file and loops through them into a command
