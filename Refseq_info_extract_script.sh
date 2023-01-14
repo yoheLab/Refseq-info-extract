@@ -39,6 +39,6 @@ done
 
 python3 Refseq_edit_file.py >> file_name.csv
 
-sed -i '1i Hits,Sequence_ID,Microbe_organism,Animal_species,Domain,Kingdom,Subkingdom,Phylum,Subpyhlum,Class,Subclass,Order,Family,Genus,Species' file_name.csv
+sed -i '1i Read_counts,Sequence_ID,Microbe_organism,Animal_species,Domain,Kingdom,Subkingdom,Phylum,Subpyhlum,Class,Subclass,Order,Family,Genus,Species' file_name.csv
 
 
